@@ -28,7 +28,7 @@ app.post('/contact', express.urlencoded({ extended: true }), (req, res) => {
               },
             ],
             Subject: 'Mail Response',
-            Textpart: `This is a response to the email you filled\n Your name: ${name}\nYour Email: ${email}\nYour Phone Number: ${phoneNumber}\nYour message: ${message}\n\nThis is part HNG Internship Task - Stage 2`,
+            Textpart: `This is a response to the email someone filled on your resume website\n Your name: ${name}\nYour Email: ${email}\nYour Phone Number: ${phoneNumber}\nYour message: ${message}\n\nThis is part HNG Internship Task - Stage 2`,
           },
         ],
       },
