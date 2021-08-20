@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: #6c5ce7;
+      }
+      .header {
+        overflow: auto;
+        padding: 3px;
+        box-sizing: border-box;
+      }
+      .subHeader1 {
+        max-width: 550px;
+        float: left;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+      .subHeader2 {
+        max-width: 300px;
+        float: right;
+        padding: 1px;
+        box-sizing: border-box;
+      }
+      #firstName {
+        font-size: 50px;
+        display: inline-block;
+        color: #a29bfe;
+        font-family: Garamond, serif;
+        font-weight: 900;
+        padding: 5px;
+      }
+      #emoticon {
+        font-size: 55px;
+        display: inline;
+        padding: 3px;
+      }
+      #title {
+        text-transform: capitalize;
+        padding: 5px;
+        color: #dfe6e9;
+        font-size: 25px;
+        font-family: Garamond, serif;
+        font-weight: 700;
+      }
+      #bio {
+        padding: 5px;
+        text-align: justify;
+        font-weight: 700;
+        font-weight: Garamond, serif;
+        color: #dfe6e9;
+        font-size: 18px;
+      }
+      .prop1 {
+        text-transform: uppercase;
+        padding: 3px;
+        margin: 2px;
+        color: #dfe6e9;
+        font-family: Garamond, serif;
+        font-weight: 700;
+      }
+      .val1 {
+        padding: 5px;
+        margin-left: 4px;
+        color: #a29bfe;
+        font-family: Garamond, serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+      .valLink {
+        padding: 5px;
+        display: block;
+        margin-left: 4px;
+        color: #a29bfe;
+        letter-spacing: 2px;
+        font-family: Garamond, serif;
+        font-weight: 700;
+        font-size: 17px;
+        text-decoration: none;
+      }
+      .prop2 {
+        font-family: Garamond, serif;
+        color: #dfe6e9;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 20px;
+        padding: 3px;
+      }
+      .val2 {
+        color: #a29bfe;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        padding: 5px;
+        margin: 5px;
+        font-family: Garamond, serif;
+      }
+      .prop3 {
+        float: left;
+        font-family: Garamond, serif;
+        font-weight: 700;
+        color: #dfe6e9;
+        font-size: 18px;
+        padding: 3px;
+        clear: left;
+      }
+      .val3 {
+        font-family: Garamond, serif;
+        font-size: 17px;
+        color: #a29bfe;
+        letter-spacing: 2px;
+        font-weight: 700;
+        padding: 5px;
+        margin-left: 3px;
+        float: left;
+      }
+      .headings {
+        border-top: 2px solid #dfe6e9;
+        border-bottom: 2px solid #dfe6e9;
+        text-transform: uppercase;
+        text-align: center;
+        color: #a29bfe;
+        font-size: 35px;
+        font-weight: 700;
+        font-family: Garamond, serif;
+        clear: right;
+        padding: 3px;
+        letter-spacing: 2px;
+      }
+      .skillsItem {
+        display: inline-block;
+        background-color: #dfe6e9;
+        color: #6c5ce7;
+        box-sizing: border-box;
+        padding: 5px;
+        border-radius: 3px;
+        margin: 2px;
+        font-family: Garamond, serif;
+        font-weight: 700;
+      }
+      footer {
+        clear: left;
+        padding: 3px;
+        margin-top: 45px;
+      }
+      #contactMe {
+        font-size: 30px;
+        text-align: center;
+        font-family: Garamond, serif;
+        text-transform: capitalize;
+        padding: 5px;
+        color: #a29bfe;
+        font-weight: 700;
+      }
+      form {
+        padding: 3px;
+        margin: auto;
+        width: 70%;
+      }
+      label,
+      input {
+        display: block;
+      }
+      label {
+        font-family: Garamond, serif;
+        letter-spacing: 2px;
+        color: #dfe6e9;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 18px;
+        padding: 4px;
+      }
+      .field {
+        border: 1px solid #a29bfe;
+        outline: none;
+        max-width: 245px;
+        height: 17px;
+        padding: 5px;
+        margin-top: 3px;
+        margin-left: 10px;
+        margin-bottom: 7px;
+        font-family: Garamond, serif;
+        font-size: 16px;
+        color: #a29bfe;
+        font-weight: 600;
+      }
+      #send {
+        border: 2px solid #a29bfe;
+        background-color: #6c5ce7;
+        color: #a29bfe;
+        padding: 4px;
+        font-size: 20px;
+        font-family: Garamond, serif;
+        text-transform: capitalize;
+        font-weight: 900;
+        letter-spacing: 1px;
+        margin: 10px;
+      }
+      textarea {
+        font-family: Garamond, serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: #a29bfe;
+        border: 1px solid #a29bfe;
+        max-width: 300px;
+        height: 75px;
+        padding: 5px;
+        margin-top: 3px;
+        margin-bottom: 7px;
+        margin-left: 10px;
+        outline: none;
+      }
+      .images {
+        width: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="subHeader1">
+        <p id="firstName">Ashraf</p>
+        <p id="emoticon">&#128512;</p>
+        <p id="title">Backend software developer</p>
+        <!-- Remember to set the text-align property of #bio to justify -->
+        <p id="bio">
+          Professional software developer with more than two years of coding
+          experience in the software development industry. Worked in finTechs,
+          edTechs, Traditional banks and lots of side projects.
+        </p>
+      </div>
+      <div class="subHeader2">
+        <p class="prop1">email:</p>
+        <span><p class="val1">-otagunolaniyi7@gmail.com</p></span>
+        <p class="prop1">phone:</p>
+        <span><p class="val1">+2349134596317</p></span>
+        <p class="prop1">address:</p>
+        <span
+          ><p class="val1">
+            -32, sikiru omolaja str, kola bus-stop, alagbado, lagos.
+          </p></span
+        >
+        <p class="prop1">github:</p>
+        <a class="valLink" href="https://github.com/ashraf267">@ashraf267</a>
+        <p class="prop1">twitter:</p>
+        <a class="valLink" href="https://twitter.com/ashraf_otagun"
+          >@ashraf_otagun</a
+        >
+      </div>
+    </div>
+    <h2 class="headings">Skills</h2>
+    <!-- Skills list -->
+    <span class="skillsItem">HTML</span>
+    <span class="skillsItem">CSS</span>
+    <span class="skillsItem">JavaScript</span>
+    <span class="skillsItem">Node.js</span>
+    <span class="skillsItem">express.js</span>
+    <span class="skillsItem">Golang</span>
+    <span class="skillsItem">mongoDB</span>
+    <h2 class="headings">Experience</h2>
+    <p class="prop2">Status:</p>
+    <span><p class="val2">-Intern at HNGi8</p></span>
+    <p class="prop2">Year:</p>
+    <span><p class="val2">-2021</p></span>
+    <p class="prop2">Track:</p>
+    <span><p class="val2">-Backend - Node.js & Golang</p></span>
+    <h2 class="headings">Education</h2>
+    <p class="prop3">SSCE(2012 - 2018):</p>
+    <span><p class="val3">Nightingale Academy, Alagbado, Lagos.</p></span>
+    <p class="prop3">BSc Computer science(2019 - 2023):</p>
+    <span><p class="val3">University of Ilorin, Ilorin, Kwara.</p></span>
+    <!-- Contact form -->
+    <footer>
+      <h2 id="contactMe">contact me</h2>
+      <form method="POST" action="/contact">
+        <label for="yourName">name</label>
+        <input class="field" type="text" id="yourName" name="name" />
+        <label for="yourEmail">email</label>
+        <input class="field" type="email" id="" name="email" />
+        <label for="yourNo">phone number</label>
+        <input class="field" type="tel" name="phoneNumber" id="yourNo" />
+        <label for="msg">message</label>
+        <textarea name="message" id="msg"></textarea>
+        <input id="send" type="submit" value="send" />
+      </form>
+      <a href="https://hng.tech/" target="_blank"><img class="images" src="./HNGi.png"></a>
+      <a href="https://training.zuri.team/" target="_blank"><img class="images" src="./Zuri.png"></a>
+      <a href="https://ingressive.org/" target="_blank"><img class="images" src="./I4G.png"></a>
+    </footer>
+    <script src="../index.js"></script>
+  </body>
+</html>

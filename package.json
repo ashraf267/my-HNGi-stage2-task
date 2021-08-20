@@ -1,0 +1,27 @@
+{
+  "name": "demo-nodejs",
+  "version": "1.0.0",
+  "description": "demo-nodejs-app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashraf267/demo-nodejs.git"
+  },
+  "author": "ashraf otagun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashraf267/demo-nodejs/issues"
+  },
+  "homepage": "https://github.com/ashraf267/demo-nodejs#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
